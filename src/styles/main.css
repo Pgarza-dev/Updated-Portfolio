@@ -391,6 +391,18 @@ body {
     max-width: 28rem;
   }
 }
+@media (min-width: 768px) {
+  .static-tv {
+    background-image: block;
+  }
+}
+
+/* Hide on screens smaller than md (medium) */
+@media (max-width: 767px) {
+  .static-tv {
+    background-image: none;
+  }
+}
 
 @media (max-width: 1024px) {
   .project-content-left,
