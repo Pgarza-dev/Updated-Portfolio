@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import * as path from "path";
 
 export default defineConfig({
-  root: path.resolve(__dirname, "src"),
+  //   root: path.resolve(__dirname, "src"),
   plugins: [],
   server: {
     hot: true,
@@ -19,6 +19,12 @@ export default defineConfig({
         about: path.resolve(__dirname, "src/about/about.html"),
         projects: path.resolve(__dirname, "src/projects/projects.html"),
       },
+    },
+  },
+  resolve: {
+    alias: {
+      animations: path.resolve(__dirname, "src/utils/animation.js"),
+      hamburger: path.resolve(__dirname, "src/utils/hamburger.js"),
     },
   },
 });

@@ -5,7 +5,7 @@ const aboutLink = document.getElementById("about-link");
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const navMenu = document.getElementById("navMenu");
 
-function homeButton() {
+export function homeButton() {
   homeLink.addEventListener("click", () => {
     // Toggle the class 'active' on the hamburgerMenu
     hamburgerMenu.classList.toggle("active");
@@ -22,7 +22,7 @@ function homeButton() {
   });
 }
 
-function skillsButton() {
+export function skillsButton() {
   skillsLink.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -35,7 +35,7 @@ function skillsButton() {
   });
 }
 
-function aboutButton() {
+export function aboutButton() {
   aboutLink.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
     navMenu.classList.toggle("active");
