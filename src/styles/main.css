@@ -206,6 +206,7 @@ body {
 .static-tv {
   width: 100%;
   height: 100%;
+  background-color: #0f0f0f;
   background-image: repeating-radial-gradient(
     circle at 17% 32%,
     #222222 0,
