@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <script type="module" src="/main.js"></script>
     <script type="module" src="/src/utils/hamburger.js"></script>
     <script type="module" src="/src/utils/animation.js"></script>
@@ -41,7 +44,10 @@
           </div>
 
           <div class="navbar">
-            <ul class="nav-menu" id="navMenu">
+            <ul
+              class="nav-menu text-5xl px-1 sm:text-4xl md:text-7xl lg:text-8xl"
+              id="navMenu"
+            >
               <li>
                 <div class="line">
                   <span class="word"
@@ -92,10 +98,10 @@
               </li>
 
               <div
-                class="container flex justify-between m-auto p-20 text-2xl"
+                class="container flex justify-center m-auto p-20 text-base flex-wrap sm:flex-col md:flex-row lg:flex-row xl:flex-row"
                 style="font-family: DM Sans"
               >
-                <div>
+                <div class="pe-10">
                   <p>Contact me via email</p>
                 </div>
                 <div>
