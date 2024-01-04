@@ -1,6 +1,9 @@
 import "./src/styles/main.css";
-import VanillaTilt from 'vanilla-tilt';
+import { hamburgerMenu } from "./src/utils/hamburger.js";
+import VanillaTilt from "vanilla-tilt";
 // import { Collapse } from "flowbite";
+
+hamburgerMenu();
 
 let cursorX = 0;
 let cursorY = 0;

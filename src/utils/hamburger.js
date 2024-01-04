@@ -1,6 +1,6 @@
 // set the target element that will be collapsed or expanded (eg. navbar menu)
-
-const hamburger = document.querySelector(".hamburger");
+export function hamburgerMenu(){
+  const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
@@ -14,3 +14,4 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+};
