@@ -5,6 +5,7 @@ import VanillaTilt from "vanilla-tilt";
 
 hamburgerMenu();
 
+
 let cursorX = 0;
 let cursorY = 0;
 const cursorSize = 130; // Set the size of your cursor

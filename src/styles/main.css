@@ -214,7 +214,6 @@ body {
   );
 
   animation: tv-static 1000s ease-in-out infinite;
-  will-change: auto;
 }
 
 @keyframes tv-static {
