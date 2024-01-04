@@ -48,33 +48,46 @@ export function aboutButton() {
   });
 }
 
-// Call the function to initialize the click event
+// const enhance = (id) => {
+//   const element = document.getElementById(id)
+//    const text = element.textContent.split("");
 
-const enhance = (id) => {
-  const element = document.getElementById(id),
-    text = element.textContent.split("");
+//   element.textContent = "";
+//   text.forEach((letter) => {
+//     const span = document.createElement("span");
+//     span.className = "letter";
+//     span.textContent = letter;
+//     element.append(span);
+//   });
+// };
 
-  element.textContent = "";
-  text.forEach((letter) => {
-    const span = document.createElement("span");
-    span.className = "letter";
-    span.textContent = letter;
-    element.append(span);
-  });
+const enhanceText = (id) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    const text = element.textContent.split("");
+    element.textContent = "";
+
+    text.forEach((letter) => {
+      const span = document.createElement("span");
+      span.className = "letter";
+      span.textContent = letter;
+      element.append(span);
+    });
+  }
 };
 
 homeButton();
 skillsButton();
 aboutButton();
-enhance("project-link");
-enhance("skills-link");
-enhance("about-link");
-enhance("home-link");
-enhance("about-me");
-enhance("gmail-link");
-enhance("linkedIn-link");
-enhance("gitHub-link");
-enhance("gmail-footer-link");
-enhance("linkedIn-footer-link");
-enhance("gitHub-footer-link");
-enhance("resume-download");
+enhanceText("project-link");
+enhanceText("skills-link");
+enhanceText("about-link");
+enhanceText("home-link");
+enhanceText("about-me");
+enhanceText("gmail-link");
+enhanceText("linkedIn-link");
+enhanceText("gitHub-link");
+enhanceText("gmail-footer-link");
+enhanceText("linkedIn-footer-link");
+enhanceText("gitHub-footer-link");
