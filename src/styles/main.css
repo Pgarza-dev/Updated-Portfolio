@@ -432,13 +432,14 @@ svg text.text-body {
   .hamburger {
     position: sticky;
   }
+  
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .project-content,
   .card {
     max-width: 28rem;
   }
-}
+} */
 /* @media (min-width: 768px) {
   .static-tv {
     background-image: block;
