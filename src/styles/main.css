@@ -419,9 +419,12 @@ svg text.text-body {
   transition: transform 800ms ease;
   will-change: auto;
 }
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduce) {
   .hidden {
     transition: none;
+  }
+  body {
+    background-image: url("../images/static-bg.png");
   }
 }
 @media (max-width: 425px) {
