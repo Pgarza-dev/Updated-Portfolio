@@ -3,8 +3,14 @@ import { hamburgerMenu } from "./src/utils/hamburger.js";
 import VanillaTilt from "vanilla-tilt";
 // import { Collapse } from "flowbite";
 
-hamburgerMenu();
+VanillaTilt.init(document.querySelectorAll(".card"), {
+  max: 25,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.5,
+});
 
+hamburgerMenu();
 
 let cursorX = 0;
 let cursorY = 0;
@@ -77,3 +83,18 @@ const hiddenElementsLeft = document.querySelectorAll(".observer-left");
 hiddenElementsLeft.forEach((element) => {
   observerLeft.observe(element);
 });
+
+function detectBrowserAndApplyStyles() {
+  const body = document.body;
+  const isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
+
+  if (isFirefox) {
+    // If user is using Firefox, remove .static-tv and add .bg-image
+    body.classList.remove("static-tv");
+    body.classList.add("bg-image");
+  }
+}
+
+window.onload = function () {
+  detectBrowserAndApplyStyles();
+};

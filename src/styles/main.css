@@ -255,8 +255,14 @@ svg text.text-body {
     #222222 0,
     black 0.00085px
   );
-
+  will-change: auto;
   animation: tv-static 1000s ease-in-out infinite;
+}
+
+.bg-image {
+  background-image: url("../images/static-bg.png");
+  height: 100vh;
+  width: 100%;
 }
 
 .hero-name {
