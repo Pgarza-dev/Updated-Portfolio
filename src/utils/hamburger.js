@@ -1,4 +1,3 @@
-// set the target element that will be collapsed or expanded (eg. navbar menu)
 export function hamburgerMenu(){
   const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
