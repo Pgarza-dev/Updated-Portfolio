@@ -259,6 +259,10 @@ svg text.text-body {
   animation: tv-static 1000s ease-in-out infinite;
 }
 
+.hero-name {
+  height: 60vh;
+}
+
 @keyframes tv-static {
   from {
     background-size: 100% 100%;
