@@ -57,7 +57,7 @@ const observerRight = new IntersectionObserver(
         entry.target.classList.remove("show-right");
       }
     });
-  }
+  },
   // { threshold: 0.5 }
 );
 
@@ -75,7 +75,7 @@ const observerLeft = new IntersectionObserver(
         entry.target.classList.remove("show-left");
       }
     });
-  }
+  },
   // { threshold: 0.5 }
 );
 

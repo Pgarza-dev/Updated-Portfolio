@@ -14,10 +14,8 @@ export default {
         primary: "",
         secondary: "#3f1eb4",
         tertiary: "#ff00ff",
-        
       },
     },
   },
   plugins: [require("flowbite/plugin")],
 };
-
