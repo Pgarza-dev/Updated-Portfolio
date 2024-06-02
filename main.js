@@ -1,7 +1,6 @@
 import './src/styles/main.css'
 import {hamburgerMenu} from './src/utils/hamburger.js'
 import VanillaTilt from 'vanilla-tilt'
-// import { Collapse } from "flowbite";
 
 VanillaTilt.init(document.querySelectorAll('.card'), {
  max: 25,
@@ -58,7 +57,7 @@ const observerRight = new IntersectionObserver(
    }
   })
  },
- { threshold: 0.5 }
+ {threshold: 0.5},
 )
 
 const hiddenElementsRight = document.querySelectorAll('.observer-right')
@@ -76,7 +75,7 @@ const observerLeft = new IntersectionObserver(
    }
   })
  },
- { threshold: 0.5 }
+ {threshold: 0.5},
 )
 
 const hiddenElementsLeft = document.querySelectorAll('.observer-left')
