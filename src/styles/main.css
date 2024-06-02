@@ -333,17 +333,19 @@ svg text.text-body {
  width: 100%;
  text-align: center;
  transition: 0.8s ease-in-out;
-
- /* background-color: #27272a; */
- transition: 0.3s ease-in-out;
 }
 
 .nav-menu.active {
+ top: 0;
  inset: 0;
  height: 100%;
  width: 100%;
  z-index: 30;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
  transition: 0.8s ease-in-out;
+ /* padding-top: 10rem; */
  background-image: url('../images/static-bg.png');
  will-change: auto;
 }
