@@ -88,29 +88,6 @@ svg text.text-body {
 .card:hover p {
  opacity: 1;
 }
-/* .content-fix .project-content-left {
- margin-top: 0;
- margin-bottom: 0;
- margin-left: 0;
- margin-right: 0;
- will-change: auto;
-}
-.content-fix .project-content-right {
- margin-top: 0;
- margin-bottom: 0;
- margin-left: 0;
- margin-right: 0;
- will-change: auto;
-} */
-
-/* .content-fix .js-tilt-glare {
- margin-left: -15rem;
- will-change: auto;
-} */
-*/ .content-fix:hover .intro {
- margin-left: 0;
- will-change: auto;
-}
 
 .intro {
  padding: 6px;
@@ -120,16 +97,13 @@ svg text.text-body {
  transition: 0.5s;
  width: 20rem;
  height: 0rem;
- /* margin-left: 15rem; */
  opacity: 0;
 }
 .intro-left {
  padding: 6px;
  position: sticky;
- /* bottom: -1rem; */
  color: white;
  transition: 0.5s;
- /* width: 20rem; */
  height: 0rem;
  opacity: 0;
  will-change: auto;
@@ -159,7 +133,6 @@ svg text.text-body {
  background: radial-gradient(circle, #ff00ff, transparent);
  mix-blend-mode: screen;
  filter: blur(100px);
- /* animation: pulse 7s ease-in-out infinite; */
 }
 
 .color-two {
@@ -175,36 +148,6 @@ svg text.text-body {
  filter: blur(100px);
  animation-delay: 0.5s;
 }
-
-/* .observer-left {
- opacity: 0;
- filter: blur(10px);
- transform: translateX(-100px);
- transition: all 1s ease-in-out;
- will-change: auto;
-}
-.observer-right {
- opacity: 0;
- filter: blur(10px);
- transform: translateX(100px);
- transition: all 1s ease-in-out;
- will-change: auto;
-} */
-
-/* .show-left {
- opacity: 1;
- filter: blur(0px);
- transform: translateX(0px);
- animation: fadeIn 1.5s ease-in-out;
- will-change: auto;
-}
-.show-right {
- opacity: 1;
- filter: blur(0px);
- transform: translateX(0px);
- animation: fadeIn 1.5s ease-in-out;
- will-change: auto;
-} */
 
 @keyframes fadeIn {
  from {
@@ -225,7 +168,6 @@ svg text.text-body {
  width: 40rem;
  height: 30rem;
  object-fit: cover;
- /* margin-left: 15rem; */
  overflow: hidden;
 }
 
@@ -233,17 +175,8 @@ svg text.text-body {
  width: 40rem;
  height: 30rem;
  object-fit: cover;
- /* margin-right: 15rem; */
  overflow: hidden;
 }
-/* .static-bg-transition {
- position: absolute;
- left: -100%; 
- top: 0;
- width: 100%;
- height: 100%;
- transition: left 0.3s ease-in-out;
-} */
 
 .static-tv {
  width: 100%;
@@ -263,19 +196,10 @@ svg text.text-body {
  height: 60vh;
 }
 
-/* .js-tilt-glare {
- margin-left: 15rem;
-}
-.observer-right .js-tilt-glare {
- margin-right: -15rem;
-} */
-
 .hamburger {
- /* display: block; */
  cursor: pointer;
  z-index: 30;
  position: fixed;
- /* right: 2rem; */
 }
 
 .bar {
@@ -287,11 +211,6 @@ svg text.text-body {
  transition: all 0.3s ease-in-out;
  background-color: white;
 }
-
-/* .hamburger {
-  display: block;
-  z-index: 2;
-} */
 
 .hamburger.active .bar:nth-child(2) {
  background-color: violet;
@@ -421,9 +340,16 @@ svg text.text-body {
   transition: all 1s ease-in-out;
   will-change: auto;
  }
+ .project-content-left,
+ .project-content-right {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  overflow: hidden;
+ }
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
  .project-content-left,
  .card:hover .intro {
   margin-left: 0;
@@ -432,4 +358,4 @@ svg text.text-body {
  .card:hover .intro {
   margin-right: 0;
  }
-}
+} */
