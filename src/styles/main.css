@@ -178,22 +178,13 @@ svg text.text-body {
  overflow: hidden;
 }
 
-.static-tv {
+.static-tv,
+.bg-image {
  width: 100%;
  height: 100%;
  background-color: #222222;
  background-image: url('../images/static-bg.png');
  will-change: auto;
-}
-
-.bg-image {
- background-image: url('../images/static-bg.png');
- height: 100vh;
- width: 100%;
-}
-
-.hero-name {
- height: 60vh;
 }
 
 .hamburger {
@@ -250,7 +241,6 @@ svg text.text-body {
  justify-content: center;
  align-items: center;
  transition: 0.8s ease-in-out;
- /* padding-top: 10rem; */
  background-image: url('../images/static-bg.png');
  will-change: auto;
 }
@@ -348,14 +338,3 @@ svg text.text-body {
   overflow: hidden;
  }
 }
-
-/* @media (max-width: 1024px) {
- .project-content-left,
- .card:hover .intro {
-  margin-left: 0;
- }
- .project-content-right,
- .card:hover .intro {
-  margin-right: 0;
- }
-} */
