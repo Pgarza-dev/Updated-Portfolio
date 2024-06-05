@@ -199,3 +199,10 @@ html {
  transition: transform 800ms ease;
  will-change: auto;
 }
+
+@media screen and (max-width: 425px) {
+ .color-one,
+ .color-two {
+  display: none;
+ }
+}
