@@ -11,32 +11,36 @@ VanillaTilt.init(document.querySelectorAll('.card'), {
 
 hamburgerMenu()
 
-let cursorX = 0
-let cursorY = 0
-const cursorSize = 130 
+const isTouchDevice =
+ 'ontouchstart' in window ||
+ navigator.maxTouchPoints > 0 ||
+ navigator.msMaxTouchPoints > 0
 
-document.addEventListener('mousemove', (e) => {
- cursorX = e.clientX - cursorSize / 2
- cursorY = e.clientY - cursorSize / 2
- requestAnimationFrame(updateCursor)
-})
+if (!isTouchDevice) {
+ let cursorX = 0
+ let cursorY = 0
+ const cursorSize = 130
 
-document.addEventListener('scroll', function () {
- requestAnimationFrame(updateCursor)
-})
+ document.addEventListener('mousemove', (e) => {
+  cursorX = e.clientX - cursorSize / 2
+  cursorY = e.clientY - cursorSize / 2
+  requestAnimationFrame(updateCursor)
+ })
 
-function updateCursor() {
- const cursor = document.querySelector('.cursor')
- cursor.style.width = `${cursorSize}px`
- cursor.style.height = `${cursorSize}px`
- cursor.style.transform = `translate(${cursorX}px, ${
-  cursorY + window.scrollY
- }px)`
+ document.addEventListener('scroll', function () {
+  requestAnimationFrame(updateCursor)
+ })
+
+ function updateCursor() {
+  const cursor = document.querySelector('.cursor')
+  cursor.style.width = `${cursorSize}px`
+  cursor.style.height = `${cursorSize}px`
+  cursor.style.transform = `translate(${cursorX}px, ${cursorY + window.scrollY}px)`
+ }
 }
 
 const heroParallax = document.getElementById('hero-parallax')
 const heroTitle = document.getElementById('hero_title')
-
 
 document.addEventListener('scroll', function () {
  const scrollPosition = window.scrollY
@@ -81,18 +85,3 @@ const hiddenElementsLeft = document.querySelectorAll('.observer-left')
 hiddenElementsLeft.forEach((element) => {
  observerLeft.observe(element)
 })
-
-// function detectBrowserAndApplyStyles() {
-//  const body = document.body
-//  const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1
-
-//  if (isFirefox) {
-//   // If user is using Firefox, remove .static-tv and add .bg-image
-//   body.classList.remove('static-tv')
-//   body.classList.add('bg-image')
-//  }
-// }
-
-// window.onload = function () {
-//  detectBrowserAndApplyStyles()
-// }
