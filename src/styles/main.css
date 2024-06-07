@@ -78,12 +78,6 @@ html {
  will-change: auto;
 }
 
-.hamburger {
- cursor: pointer;
- z-index: 30;
- position: fixed;
-}
-
 .bar {
  display: block;
  width: 60px;
@@ -121,6 +115,7 @@ html {
  flex-direction: column;
  width: 100%;
  text-align: center;
+ align-items: center;
  transition: 0.8s ease-in-out;
 }
 
