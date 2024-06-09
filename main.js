@@ -49,39 +49,3 @@ document.addEventListener('scroll', function () {
  heroTitle.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)'
  heroTitle.style.opacity = 2.5 - scrollPosition / 500
 })
-
-const observerRight = new IntersectionObserver(
- (entries) => {
-  entries.forEach((entry) => {
-   if (entry.isIntersecting) {
-    entry.target.classList.add('show-right')
-   } else {
-    entry.target.classList.remove('show-right')
-   }
-  })
- },
- {threshold: 0.5},
-)
-
-const hiddenElementsRight = document.querySelectorAll('.observer-right')
-hiddenElementsRight.forEach((element) => {
- observerRight.observe(element)
-})
-
-const observerLeft = new IntersectionObserver(
- (entries) => {
-  entries.forEach((entry) => {
-   if (entry.isIntersecting) {
-    entry.target.classList.add('show-left')
-   } else {
-    entry.target.classList.remove('show-left')
-   }
-  })
- },
- {threshold: 0.5},
-)
-
-const hiddenElementsLeft = document.querySelectorAll('.observer-left')
-hiddenElementsLeft.forEach((element) => {
- observerLeft.observe(element)
-})
